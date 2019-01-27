@@ -5,10 +5,19 @@
     <link>https://hellowordcount.github.io/categories/</link>
     <description>Recent content in Categories on Peng Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>zh-cn</language>
     
 	<atom:link href="https://hellowordcount.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Tech</title>
+      <link>https://hellowordcount.github.io/categories/tech/</link>
+      <pubDate>Sun, 27 Jan 2019 20:59:31 +0800</pubDate>
+      
+      <guid>https://hellowordcount.github.io/categories/tech/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

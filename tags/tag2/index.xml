@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tag2 on Peng Blog</title>
+    <link>https://hellowordcount.github.io/tags/tag2/</link>
+    <description>Recent content in Tag2 on Peng Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 24 Jan 2019 17:13:41 +0800</lastBuildDate>
+    
+	<atom:link href="https://hellowordcount.github.io/tags/tag2/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Placeholder</title>
+      <link>https://hellowordcount.github.io/search/placeholder/</link>
+      <pubDate>Thu, 24 Jan 2019 17:13:41 +0800</pubDate>
+      
+      <guid>https://hellowordcount.github.io/search/placeholder/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hello world!</title>
+      <link>https://hellowordcount.github.io/post/helloworld/</link>
+      <pubDate>Mon, 04 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://hellowordcount.github.io/post/helloworld/</guid>
+      <description>This is the first Blog</description>
+    </item>
+    
+  </channel>
+</rss>
