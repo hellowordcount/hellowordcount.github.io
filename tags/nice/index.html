@@ -13,9 +13,9 @@
     <meta name="keyword"  content="徐鹏, Xupeng, XuPeng, , 徐鹏的网络日志, 徐鹏的博客, XuPeng Blog, 博客, 个人网站, 互联网, Web, 大数据，BigData">
     <link rel="shortcut icon" href="/img/favicon.ico">
 
-    <title>Other-徐鹏的博客 | Peng Blog</title>
+    <title>Nice-徐鹏的博客 | Peng Blog</title>
 
-    <link rel="canonical" href="/tags/other/">
+    <link rel="canonical" href="/tags/nice/">
 
     <link rel="stylesheet" href="/css/iDisqus.min.css"/>
 	
@@ -161,20 +161,19 @@
             
 
 <div class="post-preview">
-    <a href="https://hellowordcount.github.io/post/helloworld/">
+    <a href="https://hellowordcount.github.io/post/2019-01-31-greenplum%E8%BF%9B%E7%A8%8B%E4%BC%98%E5%85%88%E7%BA%A7/">
         <h2 class="post-title">
-            欢迎来到徐鹏的博客
+            Greenplum进程优先级
         </h2>
 	
         <div class="post-content-preview">
 	
-              “Yeah It&rsquo;s on. ”
- Hello World! 
+            GreenPlum（以下简称GP）查询会独立启动一个进程，该进程的nice为主进程的nice+20；在我们实际生产环境下，Greenplum的进程nice为0，查询进程优先级为19（nice最大值为19）。 在GP使用独立服务器的时候是没有问题，但是其使用率较低，因此对GP集群进行了混布，混布之后发现，GP的查询性能下降。经分析为GP 查询进程的nice 为19，优先级最低。
        
         </div>
     </a>
     <p class="post-meta">
-    Posted by      &#34;徐鹏&#34; Monday, June 4, 2018
+    Posted by 徐鹏 Thursday, January 31, 2019
     </p>
 </div>
 <hr>
@@ -230,7 +229,7 @@
            <ul class="list-inline"> 
                
                <li>
-                   <a href="https://hellowordcount.github.io/tags/other/index.xml" rel="alternate" type="application/rss+xml" title="Peng Blog" >
+                   <a href="https://hellowordcount.github.io/tags/nice/index.xml" rel="alternate" type="application/rss+xml" title="Peng Blog" >
                        <span class="fa-stack fa-lg">
                            <i class="fa fa-circle fa-stack-2x"></i>
                            <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
@@ -310,7 +309,7 @@
                 <ul class="list-inline text-center">
                    
                    <li>
-                       <a href="https://hellowordcount.github.io/tags/other/index.xml" rel="alternate" type="application/rss+xml" title="Peng Blog" >
+                       <a href="https://hellowordcount.github.io/tags/nice/index.xml" rel="alternate" type="application/rss+xml" title="Peng Blog" >
                            <span class="fa-stack fa-lg">
                                <i class="fa fa-circle fa-stack-2x"></i>
                                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
@@ -360,7 +359,7 @@
                     
                 </ul>
 		<p class="copyright text-muted">
-                    Copyright &copy; Peng Blog , 2018
+                    Copyright &copy; Peng Blog , 2019
                     <br>
                     <a href="https://themes.gohugo.io/hugo-theme-cleanwhite">CleanWhite Hugo Theme</a> by <a href="https://zhaohuabing.com">Huabing</a> |
                     <iframe

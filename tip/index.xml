@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tips on Peng Blog</title>
+    <link>https://hellowordcount.github.io/tip/</link>
+    <description>Recent content in Tips on Peng Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 31 Jan 2019 10:20:27 +0800</lastBuildDate>
+    
+	<atom:link href="https://hellowordcount.github.io/tip/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>2019 01 31 Greenplum进程优先级</title>
+      <link>https://hellowordcount.github.io/tip/2019-01-31-greenplum%E8%BF%9B%E7%A8%8B%E4%BC%98%E5%85%88%E7%BA%A7/</link>
+      <pubDate>Thu, 31 Jan 2019 10:20:27 +0800</pubDate>
+      
+      <guid>https://hellowordcount.github.io/tip/2019-01-31-greenplum%E8%BF%9B%E7%A8%8B%E4%BC%98%E5%85%88%E7%BA%A7/</guid>
+      <description>GreenPlum（以下简称GP）查询会独立启动一个进程，该进程的nice为主进程的nice+20；在我们实际生产环境下，Greenplum的进程nice为0，查询进程优先级为19（nice最大值为19）。 在GP使用独立服务器的时候是没有问题，但是其使用率较低，因此对GP集群进行了混布，混布之后发现，GP的查询性能下降。经分析为GP 查询进程的nice 为19，优先级最低。</description>
+    </item>
+    
+  </channel>
+</rss>

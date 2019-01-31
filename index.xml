@@ -6,10 +6,19 @@
     <description>Recent content on Peng Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 27 Jan 2019 20:59:31 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 31 Jan 2019 10:20:27 +0800</lastBuildDate>
     
 	<atom:link href="https://hellowordcount.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Greenplum进程优先级</title>
+      <link>https://hellowordcount.github.io/post/2019-01-31-greenplum%E8%BF%9B%E7%A8%8B%E4%BC%98%E5%85%88%E7%BA%A7/</link>
+      <pubDate>Thu, 31 Jan 2019 10:20:27 +0800</pubDate>
+      
+      <guid>https://hellowordcount.github.io/post/2019-01-31-greenplum%E8%BF%9B%E7%A8%8B%E4%BC%98%E5%85%88%E7%BA%A7/</guid>
+      <description>GreenPlum（以下简称GP）查询会独立启动一个进程，该进程的nice为主进程的nice+20；在我们实际生产环境下，Greenplum的进程nice为0，查询进程优先级为19（nice最大值为19）。 在GP使用独立服务器的时候是没有问题，但是其使用率较低，因此对GP集群进行了混布，混布之后发现，GP的查询性能下降。经分析为GP 查询进程的nice 为19，优先级最低。</description>
+    </item>
     
     <item>
       <title>使用hugo&#43;github搭建个人博客</title>
