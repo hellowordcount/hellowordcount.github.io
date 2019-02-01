@@ -6,10 +6,23 @@
     <description>Recent content in Tech on Peng Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 27 Jan 2019 20:59:31 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 01 Feb 2019 16:39:42 +0800</lastBuildDate>
     
 	<atom:link href="https://hellowordcount.github.io/categories/tech/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Centos7 bcc安装</title>
+      <link>https://hellowordcount.github.io/post/2019-02-01-centos7-bcc%E5%AE%89%E8%A3%85/</link>
+      <pubDate>Fri, 01 Feb 2019 16:39:42 +0800</pubDate>
+      
+      <guid>https://hellowordcount.github.io/post/2019-02-01-centos7-bcc%E5%AE%89%E8%A3%85/</guid>
+      <description>﻿因为hadoop集群，部分节点存在cpu load、cpu system、disk io等告警，需要bcc想过工具分析其性能瓶颈。服务器是centos7，官方没有提供相关安装包，无法直接通过yum install bcc-tools的方式安装。
+安装步骤 准备工作 由于线上服务器无法连接外网，需要预先下载一些安装包（如果你的环境可以连接网络，请忽略） kernel-ml-headers-4.18.16-1.el7.elrepo.x86_64.rpm kernel-ml-tools-4.18.16-1.el7.elrepo.x86_64.rpm kernel-ml-tools-libs-4.18.16-1.el7.elrepo.x86_64.rpm http://mirrors.ukfast.co.uk/sites/elrepo.org/archive/kernel/ install-sysdig https://s3.amazonaws.com/download.draios.com/stable/install-sysdig cfe-3.9.1.src.tar.xz http://releases.llvm.org/3.9.1/cfe-3.9.1.src.tar.xz
+环境确定 如果内核版本不达标，需要升级内核；笔者的环境存在3.10、4.11、4.18 的kernel。kernel-headers、kernel-devel、kernel-tools、kernel-tools-libs 还是3.10的版本，因此需要对这些包进行升级 主要升级
+$ cat /etc/redhat-release CentOS Linux release 7.3.1611 (Core) $ uname -sr Linux 4.18.16-1.el7.elrepo.x86_64 $ yum remove -y kernel-headers-3.10.0-514.el7.x86_64 kernel-devel-3.10.0-514.el7.x86_64 kernel-tools-libs-3.10.0-514.el7.x86_64 kernel-tools-3.10.0-514.el7.x86_64 $ yum localinstall -y kernel-ml-headers-4.18.16-1.el7.elrepo.x86_64.rpm kernel-ml-tools-4.18.16-1.el7.elrepo.x86_64.rpm kernel-ml-tools-libs-4.18.16-1.el7.elrepo.x86_64.rpm  安装sysdig #预先下载 https://s3.amazonaws.com/download.draios.com/stable/install-sysdig $bash install-sysdig  或者
+curl -s https://s3.amazonaws.com/download.draios.com/stable/install-sysdig | sudo bash  安装bcc-tools 安装依赖包 yum install -y bison ethtool flex git iperf libstdc++-static \ python-netaddr python-pip gcc gcc-c++ make zlib-devel \ elfutils-libelf-devel cmake3 yum install -y luajit luajit-devel export http_proxy=172.</description>
+    </item>
     
     <item>
       <title>使用hugo&#43;github搭建个人博客</title>

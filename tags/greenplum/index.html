@@ -168,12 +168,12 @@
 	
         <div class="post-content-preview">
 	
-            GreenPlum（以下简称GP）查询会独立启动一个进程，该进程的nice为主进程的nice+20；在我们实际生产环境下，Greenplum的进程nice为0，查询进程优先级为19（nice最大值为19）。 在GP使用独立服务器的时候是没有问题，但是其使用率较低，因此对GP集群进行了混布，混布之后发现，GP的查询性能下降。经分析为GP 查询进程的nice 为19，优先级最低。
-       
+            GP集群资源使用率大部分时间是比较低的，而服务器配置的资源较高，这样就造成资源浪费，现在通过混部的模式，在GP集群上使用docker混部storm、nodemanager等计算任务，充分利用集群资源；但是混部后发现GP性能下降较多，发现GP查询进程的nice值高，优先级低。因此需要调整GP集群进程的nice值，来优化混部部署。
+        
         </div>
     </a>
     <p class="post-meta">
-    Posted by 徐鹏 Thursday, January 31, 2019
+    Posted by jigong Thursday, January 31, 2019
     </p>
 </div>
 <hr>
@@ -200,6 +200,12 @@
         <h5>FEATURED TAGS</h5>
         <div class="tags">
              
+            
+                
+            
+                
+            
+                
             
                 
             
